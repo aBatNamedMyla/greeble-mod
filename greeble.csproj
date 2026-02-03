@@ -10,7 +10,10 @@
 
 	<!-- References -->
 	<ItemGroup>
-	  <Folder Include="src\greeble\" />
+	  <Folder Include="src\greeble\Assets\" />
+	  <Folder Include="src\greeble\Content\Purity\Critters\" />
+	  <Folder Include="src\greeble\Content\Purity\Items\" />
+	  <Folder Include="src\greeble\Content\Purity\Tiles\" />
 	</ItemGroup>
 
 </Project>
