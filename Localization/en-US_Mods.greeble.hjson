@@ -1,0 +1,6 @@
+NPCs: {
+	Kiwi: {
+		DisplayName: Kiwi
+		Bestiary: fungus
+	}
+}
