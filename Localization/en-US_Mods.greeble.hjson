@@ -4,3 +4,10 @@ NPCs: {
 		Bestiary: fungus
 	}
 }
+
+Items: {
+	Kiwi: {
+		DisplayName: Kiwi
+		Tooltip: ""
+	}
+}
