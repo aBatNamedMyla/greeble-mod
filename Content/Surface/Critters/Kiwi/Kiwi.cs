@@ -37,6 +37,15 @@ public class Kiwi : ModNPC
     {
         NPC.spriteDirection = NPC.direction;
     }
+    
+    public override float SpawnChance(NPCSpawnInfo spawnInfo)
+    {
+        if (spawnInfo.Player.ZoneForest && !Main.dayTime && !Main.bloodMoon)
+        {
+            return 0.1f;
+        }
+        return 0f;
+    }
 
     public override void FindFrame(int frameHeight)
     {
