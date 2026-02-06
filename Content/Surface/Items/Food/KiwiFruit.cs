@@ -1,6 +1,7 @@
 using greeble.Content.Surface.Critters.Kiwi;
 using Microsoft.Xna.Framework;
 using Terraria;
+using Terraria.Audio;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -30,5 +31,17 @@ public class KiwiFruit : ModItem
             .AddTile(TileID.Sawmill)
             .Register();
     }
-    
+
+    public override void OnCreated(ItemCreationContext context)
+    {
+        if (context is RecipeItemCreationContext)
+        { 
+            SoundEngine.PlaySound(SoundID.Item177, Main.LocalPlayer.Center);
+            if (Main.netMode != NetmodeID.MultiplayerClient)
+            {
+                int npcIndex = NPC.NewNPC(new EntitySource_Misc("murder"), (int)Main.LocalPlayer.position.X, (int)Main.LocalPlayer.position.Y, ModContent.NPCType<Kiwi>());
+                NetMessage.SendData(MessageID.SyncNPC,npcIndex);
+            }
+        }
+    }
 }
