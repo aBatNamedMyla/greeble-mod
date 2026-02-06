@@ -1,3 +1,4 @@
+using greeble.Content.Surface.Critters.Kiwi;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.DataStructures;
@@ -6,7 +7,7 @@ using Terraria.ModLoader;
 
 namespace greeble.Content.Surface.Items.Food;
 
-public class Kiwi : ModItem
+public class KiwiFruit : ModItem
 {
     public override void SetStaticDefaults()
     {
@@ -18,7 +19,16 @@ public class Kiwi : ModItem
     public override void SetDefaults()
     {
         Item.DefaultToFood(24, 24, BuffID.WellFed, 18000);
-        Item.value = Item.buyPrice(0, 0, 20, 0);
+        Item.value = Item.buyPrice(0, 0, 5, 0);
         Item.rare = ItemRarityID.Blue;
     }
+
+    public override void AddRecipes()
+    {
+        CreateRecipe(1)
+            .AddIngredient(ModContent.ItemType<KiwiItem>(), 1)
+            .AddTile(TileID.Sawmill)
+            .Register();
+    }
+    
 }

@@ -10,4 +10,14 @@ Items: {
 		DisplayName: Kiwi
 		Tooltip: ""
 	}
+
+	KiwiItem: {
+		DisplayName: Kiwi Item
+		Tooltip: ""
+	}
+
+	KiwiFruit: {
+		DisplayName: Kiwi Fruit
+		Tooltip: ""
+	}
 }

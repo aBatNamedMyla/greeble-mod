@@ -1,3 +1,4 @@
+using greeble.Content.Surface.Items.Food;
 using Terraria;
 using Terraria.GameContent.Bestiary;
 using Terraria.ID;
@@ -24,6 +25,7 @@ public class Kiwi : ModNPC
         NPC.height = 22;
         NPC.HitSound = SoundID.NPCHit1;
         NPC.DeathSound = SoundID.NPCDeath1;
+        NPC.catchItem = ModContent.ItemType<KiwiItem>();
     }
     
     public override void SetBestiary(BestiaryDatabase database, BestiaryEntry bestiaryEntry)
@@ -86,4 +88,24 @@ public class Kiwi : ModNPC
             }
         }
     }
+}
+
+public class KiwiItem : ModItem
+{
+    public override void SetStaticDefaults()
+    {
+        Item.ResearchUnlockCount = 5;
+    }
+    
+    public override void SetDefaults()
+    {
+        Item.CloneDefaults(ItemID.Bunny);
+        Item.width = 24;
+        Item.height = 22;
+        Item.makeNPC = ModContent.NPCType<Kiwi>();
+        Item.value = Item.buyPrice(0, 0, 5, 0);
+        Item.rare = ItemRarityID.White;
+    }
+    
+    
 }
