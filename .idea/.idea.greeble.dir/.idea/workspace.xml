@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5945820a-8b6a-4c52-95bc-1b24e4aa1e83" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.greeble.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.greeble.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Surface/Items/Food/KiwiFruit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Surface/Items/Food/KiwiFruit.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Surface/Critters/Kiwi/Kiwi.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Surface/Critters/Kiwi/Kiwi.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/greeble.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/greeble.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/greeble.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/greeble.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider.project.model.nuget.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +30,7 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Content/Surface/Items/Food/Kiwi.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Content/Surface/Critters/Gores/SurfaceGores.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -68,6 +66,7 @@
       <workItem from="1770382484832" duration="1284000" />
       <workItem from="1770388388379" duration="1910000" />
       <workItem from="1770398725432" duration="1995000" />
+      <workItem from="1770470128744" duration="2389000" />
     </task>
     <servers />
   </component>

@@ -39,7 +39,7 @@ public class KiwiFruit : ModItem
             SoundEngine.PlaySound(SoundID.Item177, Main.LocalPlayer.Center);
             if (Main.netMode != NetmodeID.MultiplayerClient)
             {
-                int npcIndex = NPC.NewNPC(new EntitySource_Misc("murder"), (int)Main.LocalPlayer.position.X, (int)Main.LocalPlayer.position.Y, ModContent.NPCType<Kiwi>());
+                int npcIndex = NPC.NewNPC(new EntitySource_Misc("murder"), (int)Main.LocalPlayer.position.X, (int)Main.LocalPlayer.position.Y + 16, ModContent.NPCType<SlicedKiwi>());
                 NetMessage.SendData(MessageID.SyncNPC,npcIndex);
             }
         }

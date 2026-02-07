@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("greeble")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bbc6a05e5c01453f87347005c64e9c63b21399d0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+71979fd75d630cbee6e87127944acc3b01f675d2")]
 [assembly: System.Reflection.AssemblyProductAttribute("greeble")]
 [assembly: System.Reflection.AssemblyTitleAttribute("greeble")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

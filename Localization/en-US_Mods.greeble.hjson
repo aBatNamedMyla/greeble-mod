@@ -3,6 +3,8 @@ NPCs: {
 		DisplayName: Kiwi
 		Bestiary: fungus
 	}
+
+	SlicedKiwi.DisplayName: Sliced Kiwi
 }
 
 Items: {

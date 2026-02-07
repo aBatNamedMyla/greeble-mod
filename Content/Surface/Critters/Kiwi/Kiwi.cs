@@ -88,6 +88,20 @@ public class Kiwi : ModNPC
             }
         }
     }
+
+    public override void HitEffect(NPC.HitInfo hit)
+    {
+        if (NPC.life > 0)
+        {
+            
+        }
+        else
+        {
+            Gore.NewGore(NPC.GetSource_Death(), NPC.position, NPC.velocity, Mod.Find<ModGore>("KiwiGore_Head").Type, NPC.scale);
+            Gore.NewGore(NPC.GetSource_Death(), NPC.position, NPC.velocity, Mod.Find<ModGore>("KiwiGore_Leg0").Type, NPC.scale);
+            Gore.NewGore(NPC.GetSource_Death(), NPC.position, NPC.velocity, Mod.Find<ModGore>("KiwiGore_Leg1").Type, NPC.scale);
+        }
+    }
 }
 
 public class KiwiItem : ModItem
