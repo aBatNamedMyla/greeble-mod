@@ -49,7 +49,7 @@ public class SlicedKiwi : ModNPC
     public override void FindFrame(int frameHeight)
     {
         NPC.frameCounter++;
-        if (NPC.frameCounter > 3)
+        if (NPC.frameCounter > 2)
         {
             NPC.frameCounter = 0;
             NPC.frame.Y += frameHeight;
